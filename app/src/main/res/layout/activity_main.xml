@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:background="#DB4646"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/dog"
+                />
+
+        </RelativeLayout>
+        <LinearLayout
+
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <EditText
+                android:background="#fff"
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:id="@+id/edit"
+                />
+            <Button
+                android:background="#fff"
+                android:text="搜索"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/sousuo"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.bawei.yanshenghao20191127.FloatView
+        android:id="@+id/Float"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    </com.bawei.yanshenghao20191127.FloatView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>
